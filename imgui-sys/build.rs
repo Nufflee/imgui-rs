@@ -69,6 +69,10 @@ fn main() -> std::io::Result<()> {
             "include_imgui_master.cpp"
         };
 
+        // Required for compiling backends
+        build.include(cimgui_dir.join("imgui"));
+        build.define("IMGUI_IMPL_API", "extern \"C\"");
+
         // Set up compiler
         let compiler = build.get_compiler();
 

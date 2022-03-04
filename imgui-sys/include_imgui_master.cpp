@@ -9,8 +9,10 @@
 #include "./third-party/imgui-master/imgui/imgui_tables.cpp"
 #include "./third-party/imgui-master/cimgui.cpp"
 
+// TODO: Add other backends here
+#include "./third-party/imgui-master/imgui/backends/imgui_impl_win32.cpp"
+#include "./third-party/imgui-master/imgui/backends/imgui_impl_opengl3.cpp"
+
 #ifdef IMGUI_ENABLE_FREETYPE
 #include "./third-party/imgui-master/imgui/misc/freetype/imgui_freetype.cpp"
 #endif
-
-

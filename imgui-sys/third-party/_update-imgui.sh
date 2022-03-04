@@ -25,10 +25,12 @@ popd > /dev/null
 
 # Copy required files
 mkdir -p ${OUT_DIR}/
+mkdir -p ${OUT_DIR}/backends/
 mkdir -p ${OUT_DIR}/misc/freetype/
 
 cp "${CHECKOUT}"/LICENSE.txt "${OUT_DIR}"/
 cp "${CHECKOUT}"/*.{h,cpp} "${OUT_DIR}"/
+cp "${CHECKOUT}"/backends/*.{h,cpp} "${OUT_DIR}"/backends/
 cp -r "${CHECKOUT}"/misc/freetype/ "${OUT_DIR}"/misc/
 
 # Clean up
